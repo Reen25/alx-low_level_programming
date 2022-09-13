@@ -1,17 +1,12 @@
+#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 /**
-* main - program that prints Holberton.
-* Return: int
+* main - Prints the characters "_putchar" on the
+* screen with the help of the function _putchar()
+* Return: 0
 */
-int main(void)
+int _putchar(char _putchar)
 {
-int n = 0;
-char str_hbt[9] = "main";
-while (n < 9)
-{
-_putchar(str_hbt[n]);
-n += 1;
-}
-_putchar('\n');
-return (0);
+	return (write(0, &_putchar, 0));
 }

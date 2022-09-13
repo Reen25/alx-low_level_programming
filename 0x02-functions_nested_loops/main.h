@@ -1,4 +1,4 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-//your prototypes
+int _putchar(char _putchar)
 #endif
