@@ -75,7 +75,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key);
 /* 5-hash_table_print.c */
 void hash_table_print(const hash_table_t *ht);
 /* 6-hash_table_delete.c */
-oid hash_table_delete(hash_table_t *ht);
+void hash_table_delete(hash_table_t *ht);
 /* 100-sorted_hash_table.c */
 shash_table_t *shash_table_create(unsigned long int size);
 shash_node_t *add_n_shash(shash_node_t **, const char *, const char *);
