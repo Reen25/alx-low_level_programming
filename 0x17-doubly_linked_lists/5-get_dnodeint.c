@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
 * get_dnodeint_at_index - gets the nth node of a doubly linked list
 * @head: head pointer to the list
 * @index: index of the node to return
@@ -16,6 +16,6 @@ if (index == i)
 return (head);
 head = head->next;
 i++;
-}							
+}
 return (NULL);
 }
