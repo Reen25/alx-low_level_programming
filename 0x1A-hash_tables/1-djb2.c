@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-/*
+/**
 * hash_djb2 - entry string
 * @str:	string to convert
 * Return: hash of the str
