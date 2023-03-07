@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-/*
+/**
 * add_n_hash - adds a node at the beginning of a hash at a given index
 * @head: head of the hash linked list
 * @key: key of the hash
@@ -29,7 +29,7 @@ tmp->next = *head;
 *head = tmp;
 return (*head);
 }
-/*
+/**
 * hash_table_set - adds a hash (key, value) to a given hash table
 * @ht: pointer to the hash table
 * @key: key of the hash
