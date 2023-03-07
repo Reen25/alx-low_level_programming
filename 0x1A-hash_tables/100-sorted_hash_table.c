@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-/*
+/**
 * shash_table_create - creates a shash table with a given size
 * @size: size of the shash table
 * Return: the created shash table, or NULL if function fails
@@ -23,7 +23,7 @@ table->shead = NULL;
 table->stail = NULL;
 return (table);
 }
-/*
+/**
 * add_n_shash - adds a node at the beginning of a shash at a given index
 * @h: head of the shash linked list
 * @key: key of the shash
@@ -53,7 +53,7 @@ tmp->next = *h;
 *h = tmp;
 return (tmp);
 }
-/*
+/**
 * add_i_shash - adds a node on the DLL of the shash table
 * @ht: pointer to the table
 * @new: new node to add
@@ -93,7 +93,7 @@ else
 ht->shead = new;
 ht->stail = new;
 }
-/*
+/**
 * shash_table_set - adds a hash (key, value) to a given shash table
 * @ht: pointer to the shash table
 * @key: key of the shash
@@ -115,7 +115,7 @@ return (0);
 add_i_shash(ht, new);
 return (1);
 }
-/*
+/**
 * shash_table_get - retrieves a value associated with a key
 * @ht: pointer to the shash table
 * @key: key of the shash
@@ -139,7 +139,7 @@ tmp = tmp->next;
 }
 return (NULL);
 }
-/*
+/**
 * shash_table_print - prints the keys and values of the shash table
 * @ht: pointer to the shash table
 * Return: no return
@@ -161,7 +161,7 @@ tmp = tmp->snext;
 }
 printf("}\n");
 }
-/*
+/**
 * shash_table_print_rev - prints the keys and values of the shash table
 * in reverse
 * @ht: pointer to the shash table
@@ -184,7 +184,7 @@ tmp = tmp->sprev;
 }
 printf("}\n");
 }
-/*
+/**
 * shash_table_delete - deletes a shash table
 * @ht: pointer to the shash table
 * Return: no return
